@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:fillViewport="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ECEFF1">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:src="@drawable/nba" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/lebron_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Lebron James"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:id="@+id/lebron_points"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/lebron_rebounds"
+                    android:layout_alignStart="@+id/lebron_rebounds"
+                    android:layout_below="@+id/lebron_name"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="43dp"
+                    android:onClick="lebronPoints"
+                    android:text="Points"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/lebron_point_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lebron_points"
+                    android:layout_alignEnd="@+id/lebron_name"
+                    android:layout_alignRight="@+id/lebron_name"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/lebron_rebounds"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lebron_points"
+                    android:layout_margin="8dp"
+                    android:onClick="lebronRebounds"
+                    android:text="Rebounds"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/lebron_rebound_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lebron_rebounds"
+                    android:layout_alignLeft="@+id/lebron_point_counter"
+                    android:layout_alignStart="@+id/lebron_point_counter"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/lebron_asists"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lebron_rebounds"
+                    android:layout_margin="8dp"
+                    android:onClick="lebronAsists"
+                    android:text="Asists"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/lebron_asist_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/lebron_asists"
+                    android:layout_alignLeft="@+id/lebron_rebound_counter"
+                    android:layout_alignStart="@+id/lebron_rebound_counter"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:layout_alignRight="@+id/lebron_name"
+                    android:layout_below="@+id/lebron_asists"
+                    android:src="@drawable/cavs" />
+
+            </RelativeLayout>
+
+            <View
+                android:layout_width="3dp"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="140dp"
+                android:layout_marginTop="16dp"
+                android:background="@color/colorPrimaryDark"
+
+                />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/durant_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="16dp"
+                    android:text="Kevin Durant"
+                    android:textColor="#000000"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+
+                <Button
+                    android:id="@+id/durant_points"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/durant_rebounds"
+                    android:layout_alignStart="@+id/durant_rebounds"
+                    android:layout_below="@+id/durant_name"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginTop="47dp"
+                    android:onClick="durantPoints"
+                    android:text="Points"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/durant_point_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/durant_points"
+                    android:layout_toEndOf="@+id/durant_name"
+                    android:layout_toRightOf="@+id/durant_name"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/durant_rebounds"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/durant_points"
+                    android:layout_margin="8dp"
+                    android:onClick="durantRebounds"
+                    android:text="Rebounds"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/durant_rebound_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/durant_rebounds"
+                    android:layout_alignLeft="@+id/durant_point_counter"
+                    android:layout_alignStart="@+id/durant_point_counter"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <Button
+                    android:id="@+id/durant_asists"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/durant_rebounds"
+                    android:layout_margin="8dp"
+                    android:onClick="durantAsists"
+                    android:text="Asists"
+                    android:textAllCaps="true" />
+
+                <TextView
+                    android:id="@+id/durant_asists_counter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/durant_asists"
+                    android:layout_alignLeft="@+id/durant_rebound_counter"
+                    android:layout_alignStart="@+id/durant_rebound_counter"
+                    android:text="0"
+                    android:textSize="36sp" />
+
+                <ImageView
+                    android:layout_width="100dp"
+                    android:layout_height="200dp"
+                    android:layout_alignEnd="@+id/durant_name"
+                    android:layout_below="@+id/durant_asists"
+                    android:src="@drawable/gs" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="4dp"
+            android:background="#EF5350"
+            android:onClick="reset"
+            android:text="reset"
+            android:textAllCaps="true" />
+
+    </RelativeLayout>
+</ScrollView>
